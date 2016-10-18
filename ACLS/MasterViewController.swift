@@ -16,12 +16,12 @@ struct Algorithm {
 }
 
 let algorithms: [Algorithm] = [
-    Algorithm(category: "ACLS", title: "Acute Coronary Syndromes", fileName: "algo-acs.pdf"),
-    Algorithm(category: "ACLS", title: "Cardiac Arrest Circular", fileName: "algo-arrest.pdf"),
-    Algorithm(category: "ACLS", title: "Bradycardia With a Pulse", fileName: "algo-bradycardia.pdf"),
-    Algorithm(category: "ACLS", title: "Immediate Post-Cardiac Arrest Care", fileName: "algo-postarrest.pdf"),
-    Algorithm(category: "ACLS", title: "Stroke Assessment", fileName: "algo-stroke.pdf"),
-    Algorithm(category: "ACLS", title: "Tachycardia With a Pulse", fileName: "algo-tachycardia.pdf")
+    Algorithm(category: "ACLS", title: "Acute Coronary Syndromes", fileName: "algo-acs"),
+    Algorithm(category: "ACLS", title: "Cardiac Arrest Circular", fileName: "algo-arrest"),
+    Algorithm(category: "ACLS", title: "Bradycardia With a Pulse", fileName: "algo-bradycardia"),
+    Algorithm(category: "ACLS", title: "Immediate Post-Cardiac Arrest Care", fileName: "algo-postarrest"),
+    Algorithm(category: "ACLS", title: "Stroke Assessment", fileName: "algo-stroke"),
+    Algorithm(category: "ACLS", title: "Tachycardia With a Pulse", fileName: "algo-tachycardia")
 ]
 
 class MasterViewController: UITableViewController {
@@ -36,8 +36,8 @@ class MasterViewController: UITableViewController {
         }
     }
 
-    override func viewWillAppear(animated: Bool) {
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
+    override func viewWillAppear(_ animated: Bool) {
+        self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
     }
 
@@ -48,26 +48,26 @@ class MasterViewController: UITableViewController {
 
     // MARK: - Table View
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let previewController = QLPreviewController()
-        let dataSource = QLPreviewControllerSimpleDataSource(fileName: "algo-acs")
-        previewController.dataSource = dataSource
+        previewController.dataSource = self
         previewController.delegate = self
+        previewController.currentPreviewItemIndex = indexPath.row
         let wrapperNavigationController = UINavigationController(rootViewController: previewController)
         self.splitViewController!.showDetailViewController(wrapperNavigationController, sender: self)
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return algorithms.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        let algorithm = algorithms[indexPath.row]
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let algorithm = algorithms[(indexPath as NSIndexPath).row]
         cell.textLabel!.text = algorithm.title
         return cell
     }
@@ -78,15 +78,15 @@ extension MasterViewController: QLPreviewControllerDelegate {
 }
 
 extension MasterViewController: QLPreviewControllerDataSource {
-    func numberOfPreviewItemsInPreviewController(controller: QLPreviewController) -> Int {
-        return 1
+    func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
+        return algorithms.count
     }
     
-    func previewController(controller: QLPreviewController, previewItemAtIndex index: Int) -> QLPreviewItem {
-        let mainbundle = NSBundle.mainBundle()
-        let url = mainbundle.pathForResource("algo-acs", ofType: "pdf")!
+    func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
+        let mainbundle = Bundle.main
+        let url = mainbundle.path(forResource: algorithms[index].fileName, ofType: "pdf")!
         print(url)
-        let doc = NSURL(fileURLWithPath: url)
-        return doc
+        let doc = URL(fileURLWithPath: url)
+        return doc as QLPreviewItem
     }
 }

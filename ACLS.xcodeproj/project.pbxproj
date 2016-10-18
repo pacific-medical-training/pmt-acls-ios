@@ -22,7 +22,6 @@
 		D96088101D2ED4D700C71B4D /* algo-stroke.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D960880A1D2ED4D700C71B4D /* algo-stroke.pdf */; };
 		D96088111D2ED4D700C71B4D /* algo-tachycardia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D960880B1D2ED4D700C71B4D /* algo-tachycardia.pdf */; };
 		D96088131D2EE85B00C71B4D /* PMT logo square 1000px.png in Resources */ = {isa = PBXBuildFile; fileRef = D96088121D2EE85B00C71B4D /* PMT logo square 1000px.png */; };
-		D96088151D2EEA9F00C71B4D /* QLPreviewControllerSimpleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96088141D2EEA9F00C71B4D /* QLPreviewControllerSimpleDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		D960880A1D2ED4D700C71B4D /* algo-stroke.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-stroke.pdf"; sourceTree = "<group>"; };
 		D960880B1D2ED4D700C71B4D /* algo-tachycardia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-tachycardia.pdf"; sourceTree = "<group>"; };
 		D96088121D2EE85B00C71B4D /* PMT logo square 1000px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PMT logo square 1000px.png"; sourceTree = "<group>"; };
-		D96088141D2EEA9F00C71B4D /* QLPreviewControllerSimpleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLPreviewControllerSimpleDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +117,6 @@
 				D96088051D2ED4CB00C71B4D /* PDFS */,
 				D96087D51D2ED43700C71B4D /* AppDelegate.swift */,
 				D96087D71D2ED43700C71B4D /* MasterViewController.swift */,
-				D96088141D2EEA9F00C71B4D /* QLPreviewControllerSimpleDataSource.swift */,
 				D96087D91D2ED43700C71B4D /* DetailViewController.swift */,
 				D96087DB1D2ED43800C71B4D /* Main.storyboard */,
 				D96087DE1D2ED43800C71B4D /* Assets.xcassets */,
@@ -223,18 +220,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "William Entriken";
 				TargetAttributes = {
 					D96087D11D2ED43700C71B4D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8Q693ZG5RN;
+						LastSwiftMigration = 0800;
 					};
 					D96087E71D2ED43800C71B4D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = D96087D11D2ED43700C71B4D;
 					};
 					D96087F21D2ED43800C71B4D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = D96087D11D2ED43700C71B4D;
 					};
 				};
@@ -298,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96088151D2EEA9F00C71B4D /* QLPreviewControllerSimpleDataSource.swift in Sources */,
 				D96087DA1D2ED43700C71B4D /* DetailViewController.swift in Sources */,
 				D96087D81D2ED43700C71B4D /* MasterViewController.swift in Sources */,
 				D96087D61D2ED43700C71B4D /* AppDelegate.swift in Sources */,
@@ -370,8 +370,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -416,8 +418,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -436,6 +440,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -445,10 +450,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Q693ZG5RN;
 				INFOPLIST_FILE = ACLS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -456,10 +463,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Q693ZG5RN;
 				INFOPLIST_FILE = ACLS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -471,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACLS.app/ACLS";
 			};
 			name = Debug;
@@ -483,6 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACLS.app/ACLS";
 			};
 			name = Release;
@@ -494,6 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ACLS;
 			};
 			name = Debug;
@@ -505,6 +517,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ACLS;
 			};
 			name = Release;
@@ -528,6 +541,7 @@
 				D96087FE1D2ED43800C71B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D96087FF1D2ED43800C71B4D /* Build configuration list for PBXNativeTarget "ACLSTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +550,7 @@
 				D96088011D2ED43800C71B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D96088021D2ED43800C71B4D /* Build configuration list for PBXNativeTarget "ACLSUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +559,7 @@
 				D96088041D2ED43800C71B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

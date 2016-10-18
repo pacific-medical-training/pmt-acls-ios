@@ -36,7 +36,7 @@ class DetailViewController: UIViewController {
         self.configureView()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
 
