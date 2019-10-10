@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93E77A3234EAF9D00E86851 /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = D93E77A2234EAF9D00E86851 /* Icon-1024.png */; };
 		D96087D61D2ED43700C71B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96087D51D2ED43700C71B4D /* AppDelegate.swift */; };
 		D96087D81D2ED43700C71B4D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96087D71D2ED43700C71B4D /* MasterViewController.swift */; };
 		D96087DA1D2ED43700C71B4D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96087D91D2ED43700C71B4D /* DetailViewController.swift */; };
@@ -21,7 +22,6 @@
 		D960880F1D2ED4D700C71B4D /* algo-postarrest.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D96088091D2ED4D700C71B4D /* algo-postarrest.pdf */; };
 		D96088101D2ED4D700C71B4D /* algo-stroke.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D960880A1D2ED4D700C71B4D /* algo-stroke.pdf */; };
 		D96088111D2ED4D700C71B4D /* algo-tachycardia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D960880B1D2ED4D700C71B4D /* algo-tachycardia.pdf */; };
-		D96088131D2EE85B00C71B4D /* PMT logo square 1000px.png in Resources */ = {isa = PBXBuildFile; fileRef = D96088121D2EE85B00C71B4D /* PMT logo square 1000px.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D93E77A2234EAF9D00E86851 /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
 		D96087D21D2ED43700C71B4D /* ACLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96087D51D2ED43700C71B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D96087D71D2ED43700C71B4D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		D96088091D2ED4D700C71B4D /* algo-postarrest.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-postarrest.pdf"; sourceTree = "<group>"; };
 		D960880A1D2ED4D700C71B4D /* algo-stroke.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-stroke.pdf"; sourceTree = "<group>"; };
 		D960880B1D2ED4D700C71B4D /* algo-tachycardia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-tachycardia.pdf"; sourceTree = "<group>"; };
-		D96088121D2EE85B00C71B4D /* PMT logo square 1000px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PMT logo square 1000px.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 		D96087D41D2ED43700C71B4D /* ACLS */ = {
 			isa = PBXGroup;
 			children = (
-				D96088121D2EE85B00C71B4D /* PMT logo square 1000px.png */,
+				D93E77A2234EAF9D00E86851 /* Icon-1024.png */,
 				D96088051D2ED4CB00C71B4D /* PDFS */,
 				D96087D51D2ED43700C71B4D /* AppDelegate.swift */,
 				D96087D71D2ED43700C71B4D /* MasterViewController.swift */,
@@ -220,29 +220,29 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "William Entriken";
 				TargetAttributes = {
 					D96087D11D2ED43700C71B4D = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 8Q693ZG5RN;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1110;
 					};
 					D96087E71D2ED43800C71B4D = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1110;
 						TestTargetID = D96087D11D2ED43700C71B4D;
 					};
 					D96087F21D2ED43800C71B4D = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1110;
 						TestTargetID = D96087D11D2ED43700C71B4D;
 					};
 				};
 			};
 			buildConfigurationList = D96087CD1D2ED43700C71B4D /* Build configuration list for PBXProject "ACLS" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -266,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96087E21D2ED43800C71B4D /* LaunchScreen.storyboard in Resources */,
+				D93E77A3234EAF9D00E86851 /* Icon-1024.png in Resources */,
 				D960880F1D2ED4D700C71B4D /* algo-postarrest.pdf in Resources */,
 				D96087DF1D2ED43800C71B4D /* Assets.xcassets in Resources */,
 				D960880E1D2ED4D700C71B4D /* algo-bradycardia.pdf in Resources */,
@@ -274,7 +275,6 @@
 				D96087DD1D2ED43800C71B4D /* Main.storyboard in Resources */,
 				D960880C1D2ED4D700C71B4D /* algo-acs.pdf in Resources */,
 				D96088101D2ED4D700C71B4D /* algo-stroke.pdf in Resources */,
-				D96088131D2EE85B00C71B4D /* PMT logo square 1000px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -369,12 +370,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -414,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -423,12 +427,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -467,8 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -481,8 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -494,8 +498,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACLS.app/ACLS";
 			};
 			name = Debug;
@@ -508,8 +511,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACLS.app/ACLS";
 			};
 			name = Release;
@@ -521,8 +523,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = ACLS;
 			};
 			name = Debug;
@@ -534,8 +535,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = ACLS;
 			};
 			name = Release;
