@@ -3,84 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D93E77A3234EAF9D00E86851 /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = D93E77A2234EAF9D00E86851 /* Icon-1024.png */; };
-		D96087D61D2ED43700C71B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96087D51D2ED43700C71B4D /* AppDelegate.swift */; };
-		D96087D81D2ED43700C71B4D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96087D71D2ED43700C71B4D /* MasterViewController.swift */; };
-		D96087DA1D2ED43700C71B4D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96087D91D2ED43700C71B4D /* DetailViewController.swift */; };
-		D96087DD1D2ED43800C71B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96087DB1D2ED43800C71B4D /* Main.storyboard */; };
-		D96087DF1D2ED43800C71B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96087DE1D2ED43800C71B4D /* Assets.xcassets */; };
-		D96087E21D2ED43800C71B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96087E01D2ED43800C71B4D /* LaunchScreen.storyboard */; };
-		D96087ED1D2ED43800C71B4D /* ACLSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96087EC1D2ED43800C71B4D /* ACLSTests.swift */; };
-		D96087F81D2ED43800C71B4D /* ACLSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96087F71D2ED43800C71B4D /* ACLSUITests.swift */; };
-		D960880C1D2ED4D700C71B4D /* algo-acs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D96088061D2ED4D700C71B4D /* algo-acs.pdf */; };
-		D960880D1D2ED4D700C71B4D /* algo-arrest.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D96088071D2ED4D700C71B4D /* algo-arrest.pdf */; };
-		D960880E1D2ED4D700C71B4D /* algo-bradycardia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D96088081D2ED4D700C71B4D /* algo-bradycardia.pdf */; };
-		D960880F1D2ED4D700C71B4D /* algo-postarrest.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D96088091D2ED4D700C71B4D /* algo-postarrest.pdf */; };
-		D96088101D2ED4D700C71B4D /* algo-stroke.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D960880A1D2ED4D700C71B4D /* algo-stroke.pdf */; };
-		D96088111D2ED4D700C71B4D /* algo-tachycardia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D960880B1D2ED4D700C71B4D /* algo-tachycardia.pdf */; };
+		D913E2CC261FA72F00D63A4B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913E2CB261FA72F00D63A4B /* DetailView.swift */; };
+		D913E2D1261FA75600D63A4B /* PDFViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913E2D0261FA75600D63A4B /* PDFViewUI.swift */; };
+		D913E2D6261FA78300D63A4B /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913E2D5261FA78300D63A4B /* Algorithm.swift */; };
+		D913E2DB261FA89E00D63A4B /* PrimaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913E2DA261FA89E00D63A4B /* PrimaryView.swift */; };
+		D93465A3261E549A00E67D4D /* ACLSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9346590261E549800E67D4D /* ACLSApp.swift */; };
+		D93465A7261E549A00E67D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9346592261E549A00E67D4D /* Assets.xcassets */; };
+		D93465BA261E59D600E67D4D /* algo-tachycardia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D93465B4261E59D500E67D4D /* algo-tachycardia.pdf */; };
+		D93465BC261E59D600E67D4D /* algo-bradycardia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D93465B5261E59D600E67D4D /* algo-bradycardia.pdf */; };
+		D93465BE261E59D600E67D4D /* algo-postarrest.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D93465B6261E59D600E67D4D /* algo-postarrest.pdf */; };
+		D93465C0261E59D600E67D4D /* algo-acs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D93465B7261E59D600E67D4D /* algo-acs.pdf */; };
+		D93465C2261E59D600E67D4D /* algo-stroke.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D93465B8261E59D600E67D4D /* algo-stroke.pdf */; };
+		D93465C4261E59D600E67D4D /* algo-arrest.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D93465B9261E59D600E67D4D /* algo-arrest.pdf */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D96087E91D2ED43800C71B4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D96087CA1D2ED43700C71B4D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D96087D11D2ED43700C71B4D;
-			remoteInfo = ACLS;
-		};
-		D96087F41D2ED43800C71B4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D96087CA1D2ED43700C71B4D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D96087D11D2ED43700C71B4D;
-			remoteInfo = ACLS;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		D93E77A2234EAF9D00E86851 /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
-		D96087D21D2ED43700C71B4D /* ACLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D96087D51D2ED43700C71B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D96087D71D2ED43700C71B4D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		D96087D91D2ED43700C71B4D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		D96087DC1D2ED43800C71B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D96087DE1D2ED43800C71B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D96087E11D2ED43800C71B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D96087E31D2ED43800C71B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D96087E81D2ED43800C71B4D /* ACLSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACLSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D96087EC1D2ED43800C71B4D /* ACLSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACLSTests.swift; sourceTree = "<group>"; };
-		D96087EE1D2ED43800C71B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D96087F31D2ED43800C71B4D /* ACLSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACLSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D96087F71D2ED43800C71B4D /* ACLSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACLSUITests.swift; sourceTree = "<group>"; };
-		D96087F91D2ED43800C71B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D96088061D2ED4D700C71B4D /* algo-acs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-acs.pdf"; sourceTree = "<group>"; };
-		D96088071D2ED4D700C71B4D /* algo-arrest.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-arrest.pdf"; sourceTree = "<group>"; };
-		D96088081D2ED4D700C71B4D /* algo-bradycardia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-bradycardia.pdf"; sourceTree = "<group>"; };
-		D96088091D2ED4D700C71B4D /* algo-postarrest.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-postarrest.pdf"; sourceTree = "<group>"; };
-		D960880A1D2ED4D700C71B4D /* algo-stroke.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-stroke.pdf"; sourceTree = "<group>"; };
-		D960880B1D2ED4D700C71B4D /* algo-tachycardia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-tachycardia.pdf"; sourceTree = "<group>"; };
+		D913E2CB261FA72F00D63A4B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D913E2D0261FA75600D63A4B /* PDFViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewUI.swift; sourceTree = "<group>"; };
+		D913E2D5261FA78300D63A4B /* Algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
+		D913E2DA261FA89E00D63A4B /* PrimaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryView.swift; sourceTree = "<group>"; };
+		D913E2E5261FAB1700D63A4B /* ACLS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ACLS.entitlements; sourceTree = "<group>"; };
+		D9346590261E549800E67D4D /* ACLSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACLSApp.swift; sourceTree = "<group>"; };
+		D9346592261E549A00E67D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9346597261E549A00E67D4D /* ACLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D934659A261E549A00E67D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93465A1261E549A00E67D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93465A2261E549A00E67D4D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D93465B4261E59D500E67D4D /* algo-tachycardia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-tachycardia.pdf"; sourceTree = "<group>"; };
+		D93465B5261E59D600E67D4D /* algo-bradycardia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-bradycardia.pdf"; sourceTree = "<group>"; };
+		D93465B6261E59D600E67D4D /* algo-postarrest.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-postarrest.pdf"; sourceTree = "<group>"; };
+		D93465B7261E59D600E67D4D /* algo-acs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-acs.pdf"; sourceTree = "<group>"; };
+		D93465B8261E59D600E67D4D /* algo-stroke.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-stroke.pdf"; sourceTree = "<group>"; };
+		D93465B9261E59D600E67D4D /* algo-arrest.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "algo-arrest.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D96087CF1D2ED43700C71B4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D96087E51D2ED43800C71B4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D96087F01D2ED43800C71B4D /* Frameworks */ = {
+		D9346594261E549A00E67D4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,288 +52,172 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D96087C91D2ED43700C71B4D = {
+		D934658A261E549800E67D4D = {
 			isa = PBXGroup;
 			children = (
-				D96087D41D2ED43700C71B4D /* ACLS */,
-				D96087EB1D2ED43800C71B4D /* ACLSTests */,
-				D96087F61D2ED43800C71B4D /* ACLSUITests */,
-				D96087D31D2ED43700C71B4D /* Products */,
+				D913E2E5261FAB1700D63A4B /* ACLS.entitlements */,
+				D93465B3261E59C300E67D4D /* PDFs */,
+				D934658F261E549800E67D4D /* Shared */,
+				D9346599261E549A00E67D4D /* iOS */,
+				D93465A0261E549A00E67D4D /* macOS */,
+				D9346598261E549A00E67D4D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D96087D31D2ED43700C71B4D /* Products */ = {
+		D934658F261E549800E67D4D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D96087D21D2ED43700C71B4D /* ACLS.app */,
-				D96087E81D2ED43800C71B4D /* ACLSTests.xctest */,
-				D96087F31D2ED43800C71B4D /* ACLSUITests.xctest */,
+				D9346590261E549800E67D4D /* ACLSApp.swift */,
+				D913E2DA261FA89E00D63A4B /* PrimaryView.swift */,
+				D913E2CB261FA72F00D63A4B /* DetailView.swift */,
+				D913E2D5261FA78300D63A4B /* Algorithm.swift */,
+				D913E2D0261FA75600D63A4B /* PDFViewUI.swift */,
+				D9346592261E549A00E67D4D /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D9346598261E549A00E67D4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9346597261E549A00E67D4D /* ACLS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D96087D41D2ED43700C71B4D /* ACLS */ = {
+		D9346599261E549A00E67D4D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D93E77A2234EAF9D00E86851 /* Icon-1024.png */,
-				D96088051D2ED4CB00C71B4D /* PDFS */,
-				D96087D51D2ED43700C71B4D /* AppDelegate.swift */,
-				D96087D71D2ED43700C71B4D /* MasterViewController.swift */,
-				D96087D91D2ED43700C71B4D /* DetailViewController.swift */,
-				D96087DB1D2ED43800C71B4D /* Main.storyboard */,
-				D96087DE1D2ED43800C71B4D /* Assets.xcassets */,
-				D96087E01D2ED43800C71B4D /* LaunchScreen.storyboard */,
-				D96087E31D2ED43800C71B4D /* Info.plist */,
+				D934659A261E549A00E67D4D /* Info.plist */,
 			);
-			path = ACLS;
+			path = iOS;
 			sourceTree = "<group>";
 		};
-		D96087EB1D2ED43800C71B4D /* ACLSTests */ = {
+		D93465A0261E549A00E67D4D /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				D96087EC1D2ED43800C71B4D /* ACLSTests.swift */,
-				D96087EE1D2ED43800C71B4D /* Info.plist */,
+				D93465A1261E549A00E67D4D /* Info.plist */,
+				D93465A2261E549A00E67D4D /* macOS.entitlements */,
 			);
-			path = ACLSTests;
+			path = macOS;
 			sourceTree = "<group>";
 		};
-		D96087F61D2ED43800C71B4D /* ACLSUITests */ = {
+		D93465B3261E59C300E67D4D /* PDFs */ = {
 			isa = PBXGroup;
 			children = (
-				D96087F71D2ED43800C71B4D /* ACLSUITests.swift */,
-				D96087F91D2ED43800C71B4D /* Info.plist */,
+				D93465B7261E59D600E67D4D /* algo-acs.pdf */,
+				D93465B9261E59D600E67D4D /* algo-arrest.pdf */,
+				D93465B5261E59D600E67D4D /* algo-bradycardia.pdf */,
+				D93465B6261E59D600E67D4D /* algo-postarrest.pdf */,
+				D93465B8261E59D600E67D4D /* algo-stroke.pdf */,
+				D93465B4261E59D500E67D4D /* algo-tachycardia.pdf */,
 			);
-			path = ACLSUITests;
-			sourceTree = "<group>";
-		};
-		D96088051D2ED4CB00C71B4D /* PDFS */ = {
-			isa = PBXGroup;
-			children = (
-				D96088061D2ED4D700C71B4D /* algo-acs.pdf */,
-				D96088071D2ED4D700C71B4D /* algo-arrest.pdf */,
-				D96088081D2ED4D700C71B4D /* algo-bradycardia.pdf */,
-				D96088091D2ED4D700C71B4D /* algo-postarrest.pdf */,
-				D960880A1D2ED4D700C71B4D /* algo-stroke.pdf */,
-				D960880B1D2ED4D700C71B4D /* algo-tachycardia.pdf */,
-			);
-			name = PDFS;
+			path = PDFs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D96087D11D2ED43700C71B4D /* ACLS */ = {
+		D9346596261E549A00E67D4D /* ACLS (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D96087FC1D2ED43800C71B4D /* Build configuration list for PBXNativeTarget "ACLS" */;
+			buildConfigurationList = D93465AB261E549A00E67D4D /* Build configuration list for PBXNativeTarget "ACLS (iOS)" */;
 			buildPhases = (
-				D96087CE1D2ED43700C71B4D /* Sources */,
-				D96087CF1D2ED43700C71B4D /* Frameworks */,
-				D96087D01D2ED43700C71B4D /* Resources */,
+				D9346593261E549A00E67D4D /* Sources */,
+				D9346594261E549A00E67D4D /* Frameworks */,
+				D9346595261E549A00E67D4D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ACLS;
-			productName = ACLS;
-			productReference = D96087D21D2ED43700C71B4D /* ACLS.app */;
+			name = "ACLS (iOS)";
+			productName = "ACLS (iOS)";
+			productReference = D9346597261E549A00E67D4D /* ACLS.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D96087E71D2ED43800C71B4D /* ACLSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D96087FF1D2ED43800C71B4D /* Build configuration list for PBXNativeTarget "ACLSTests" */;
-			buildPhases = (
-				D96087E41D2ED43800C71B4D /* Sources */,
-				D96087E51D2ED43800C71B4D /* Frameworks */,
-				D96087E61D2ED43800C71B4D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D96087EA1D2ED43800C71B4D /* PBXTargetDependency */,
-			);
-			name = ACLSTests;
-			productName = ACLSTests;
-			productReference = D96087E81D2ED43800C71B4D /* ACLSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D96087F21D2ED43800C71B4D /* ACLSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D96088021D2ED43800C71B4D /* Build configuration list for PBXNativeTarget "ACLSUITests" */;
-			buildPhases = (
-				D96087EF1D2ED43800C71B4D /* Sources */,
-				D96087F01D2ED43800C71B4D /* Frameworks */,
-				D96087F11D2ED43800C71B4D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D96087F51D2ED43800C71B4D /* PBXTargetDependency */,
-			);
-			name = ACLSUITests;
-			productName = ACLSUITests;
-			productReference = D96087F31D2ED43800C71B4D /* ACLSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D96087CA1D2ED43700C71B4D /* Project object */ = {
+		D934658B261E549800E67D4D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1110;
-				ORGANIZATIONNAME = "William Entriken";
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					D96087D11D2ED43700C71B4D = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 8Q693ZG5RN;
-						LastSwiftMigration = 1110;
-					};
-					D96087E71D2ED43800C71B4D = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1110;
-						TestTargetID = D96087D11D2ED43700C71B4D;
-					};
-					D96087F21D2ED43800C71B4D = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1110;
-						TestTargetID = D96087D11D2ED43700C71B4D;
+					D9346596261E549A00E67D4D = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = D96087CD1D2ED43700C71B4D /* Build configuration list for PBXProject "ACLS" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = D934658E261E549800E67D4D /* Build configuration list for PBXProject "ACLS" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = D96087C91D2ED43700C71B4D;
-			productRefGroup = D96087D31D2ED43700C71B4D /* Products */;
+			mainGroup = D934658A261E549800E67D4D;
+			productRefGroup = D9346598261E549A00E67D4D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D96087D11D2ED43700C71B4D /* ACLS */,
-				D96087E71D2ED43800C71B4D /* ACLSTests */,
-				D96087F21D2ED43800C71B4D /* ACLSUITests */,
+				D9346596261E549A00E67D4D /* ACLS (iOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D96087D01D2ED43700C71B4D /* Resources */ = {
+		D9346595261E549A00E67D4D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96087E21D2ED43800C71B4D /* LaunchScreen.storyboard in Resources */,
-				D93E77A3234EAF9D00E86851 /* Icon-1024.png in Resources */,
-				D960880F1D2ED4D700C71B4D /* algo-postarrest.pdf in Resources */,
-				D96087DF1D2ED43800C71B4D /* Assets.xcassets in Resources */,
-				D960880E1D2ED4D700C71B4D /* algo-bradycardia.pdf in Resources */,
-				D960880D1D2ED4D700C71B4D /* algo-arrest.pdf in Resources */,
-				D96088111D2ED4D700C71B4D /* algo-tachycardia.pdf in Resources */,
-				D96087DD1D2ED43800C71B4D /* Main.storyboard in Resources */,
-				D960880C1D2ED4D700C71B4D /* algo-acs.pdf in Resources */,
-				D96088101D2ED4D700C71B4D /* algo-stroke.pdf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D96087E61D2ED43800C71B4D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D96087F11D2ED43800C71B4D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D93465C0261E59D600E67D4D /* algo-acs.pdf in Resources */,
+				D93465C2261E59D600E67D4D /* algo-stroke.pdf in Resources */,
+				D93465C4261E59D600E67D4D /* algo-arrest.pdf in Resources */,
+				D93465A7261E549A00E67D4D /* Assets.xcassets in Resources */,
+				D93465BA261E59D600E67D4D /* algo-tachycardia.pdf in Resources */,
+				D93465BE261E59D600E67D4D /* algo-postarrest.pdf in Resources */,
+				D93465BC261E59D600E67D4D /* algo-bradycardia.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D96087CE1D2ED43700C71B4D /* Sources */ = {
+		D9346593261E549A00E67D4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96087DA1D2ED43700C71B4D /* DetailViewController.swift in Sources */,
-				D96087D81D2ED43700C71B4D /* MasterViewController.swift in Sources */,
-				D96087D61D2ED43700C71B4D /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D96087E41D2ED43800C71B4D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D96087ED1D2ED43800C71B4D /* ACLSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D96087EF1D2ED43800C71B4D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D96087F81D2ED43800C71B4D /* ACLSUITests.swift in Sources */,
+				D913E2DB261FA89E00D63A4B /* PrimaryView.swift in Sources */,
+				D913E2D1261FA75600D63A4B /* PDFViewUI.swift in Sources */,
+				D913E2CC261FA72F00D63A4B /* DetailView.swift in Sources */,
+				D93465A3261E549A00E67D4D /* ACLSApp.swift in Sources */,
+				D913E2D6261FA78300D63A4B /* Algorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		D96087EA1D2ED43800C71B4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D96087D11D2ED43700C71B4D /* ACLS */;
-			targetProxy = D96087E91D2ED43800C71B4D /* PBXContainerItemProxy */;
-		};
-		D96087F51D2ED43800C71B4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D96087D11D2ED43700C71B4D /* ACLS */;
-			targetProxy = D96087F41D2ED43800C71B4D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D96087DB1D2ED43800C71B4D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D96087DC1D2ED43800C71B4D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D96087E01D2ED43800C71B4D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D96087E11D2ED43800C71B4D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		D96087FA1D2ED43800C71B4D /* Debug */ = {
+		D93465A9261E549A00E67D4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -380,17 +226,18 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -404,31 +251,32 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D96087FB1D2ED43800C71B4D /* Release */ = {
+		D93465AA261E549A00E67D4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -437,17 +285,18 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -455,131 +304,86 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D93465AC261E549A00E67D4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ACLS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q693ZG5RN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLS;
+				PRODUCT_NAME = ACLS;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		D93465AD261E549A00E67D4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ACLS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q693ZG5RN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLS;
+				PRODUCT_NAME = ACLS;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D96087FD1D2ED43800C71B4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8Q693ZG5RN;
-				INFOPLIST_FILE = ACLS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		D96087FE1D2ED43800C71B4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8Q693ZG5RN;
-				INFOPLIST_FILE = ACLS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		D96088001D2ED43800C71B4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ACLSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACLS.app/ACLS";
-			};
-			name = Debug;
-		};
-		D96088011D2ED43800C71B4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ACLSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACLS.app/ACLS";
-			};
-			name = Release;
-		};
-		D96088031D2ED43800C71B4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ACLSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ACLS;
-			};
-			name = Debug;
-		};
-		D96088041D2ED43800C71B4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ACLSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.phor.ACLSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ACLS;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D96087CD1D2ED43700C71B4D /* Build configuration list for PBXProject "ACLS" */ = {
+		D934658E261E549800E67D4D /* Build configuration list for PBXProject "ACLS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D96087FA1D2ED43800C71B4D /* Debug */,
-				D96087FB1D2ED43800C71B4D /* Release */,
+				D93465A9261E549A00E67D4D /* Debug */,
+				D93465AA261E549A00E67D4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D96087FC1D2ED43800C71B4D /* Build configuration list for PBXNativeTarget "ACLS" */ = {
+		D93465AB261E549A00E67D4D /* Build configuration list for PBXNativeTarget "ACLS (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D96087FD1D2ED43800C71B4D /* Debug */,
-				D96087FE1D2ED43800C71B4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D96087FF1D2ED43800C71B4D /* Build configuration list for PBXNativeTarget "ACLSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D96088001D2ED43800C71B4D /* Debug */,
-				D96088011D2ED43800C71B4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D96088021D2ED43800C71B4D /* Build configuration list for PBXNativeTarget "ACLSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D96088031D2ED43800C71B4D /* Debug */,
-				D96088041D2ED43800C71B4D /* Release */,
+				D93465AC261E549A00E67D4D /* Debug */,
+				D93465AD261E549A00E67D4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D96087CA1D2ED43700C71B4D /* Project object */;
+	rootObject = D934658B261E549800E67D4D /* Project object */;
 }
